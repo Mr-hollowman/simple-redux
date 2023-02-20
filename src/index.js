@@ -4,15 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import store from "./redux/store";
+import store from "./components/learn-redux/store"
+// import store from "./redux/store";
 // import ReactCalc from "./ReactCalc";
 import MyTable from "./MyTable";
+import View from "./components/learn-redux/View";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <React.StrictMode>
-      <App />
+      <View />
+      {/* <App /> */}
       {/* <ReactCalc /> */}
       {/* <MyTable /> */}
     </React.StrictMode>
